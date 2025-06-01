@@ -1,36 +1,73 @@
-# Getting Started
+# OpAuto
 
-### Reference Documentation
+OpAuto (Operations Auto) is a web-based application designed to streamline operations for automotive repair shops. It offers an intuitive interface for managing appointments, tracking maintenance logs, handling payments, and more — all tailored to the needs of garage owners and technicians.
 
-For further reference, please consider the following sections:
+---
 
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/3.5.0/gradle-plugin)
-* [Create an OCI image](https://docs.spring.io/spring-boot/3.5.0/gradle-plugin/packaging-oci-image.html)
-* [Spring Boot Actuator](https://docs.spring.io/spring-boot/3.5.0/reference/actuator/index.html)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/3.5.0/reference/data/sql.html#data.sql.jpa-and-spring-data)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/3.5.0/reference/using/devtools.html)
-* [Prometheus](https://docs.spring.io/spring-boot/3.5.0/reference/actuator/metrics.html#actuator.metrics.export.prometheus)
-* [Spring Security](https://docs.spring.io/spring-boot/3.5.0/reference/web/spring-security.html)
-* [Vertex AI Gemini](https://docs.spring.io/spring-ai/reference/api/chat/vertexai-gemini-chat.html)
-* [Spring Web](https://docs.spring.io/spring-boot/3.5.0/reference/web/servlet.html)
+## 🚀 Features
 
-### Guides
+### 1. **Authentication & Authorization**
+- **Admin-Only Access:** Secure login system using JWT-based authentication.
+- **Role-Based Access:** Ensure that only authorized users can access specific features.
 
-The following guides illustrate how to use some features concretely:
+### 2. **Car Management**
+- **Add New Cars:** Register new vehicles with essential details.
+- **Update Car Information:** Modify existing car records as needed.
+- **View Car List:** Access a comprehensive list of all registered vehicles.
 
-* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
-* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
-* [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+### 3. **Maintenance Logs**
+- **Record Maintenance Activities:** Log details of maintenance performed on each vehicle.
+- **View Maintenance History:** Access a chronological history of all maintenance activities for each car.
 
-### Additional Links
+### 4. **Appointment Scheduling**
+- **Create Appointments:** Schedule maintenance appointments for vehicles.
+- **Update Appointments:** Modify existing appointments as required.
+- **View Appointment Calendar:** Access a calendar view of all upcoming appointments.
 
-These additional references should also help you:
+### 5. **Notifications**
+- **Appointment Reminders:** Receive notifications for upcoming appointments.
+- **Configurable Preferences:** Set and adjust notification preferences.
 
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
+### 6. **Garage Information & Settings**
+- **Manage Garage Details:** Update information about the garage, such as name, location, and contact details.
+- **Set Operational Hours:** Define working hours and break times.
+- **View Garage Capacity:** Monitor available slots and resources.
 
+### 7. **Payments & Approvals**
+- **Log Payments:** Record cash payments received for services rendered.
+- **Purchase Approval Workflow:** Submit and approve requests for parts and materials.
+
+### 8. **Search & Reporting**
+- **Filter Records:** Search and filter cars, appointments, and maintenance logs.
+- **Export Reports:** Generate and export reports for analysis and record-keeping.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Spring Boot (Kotlin / JDK 21 LTS)
+- **Frontend:** Angular
+- **Database:** PostgreSQL
+- **Authentication:** JWT (JSON Web Tokens)
+- **Containerization:** Docker & Docker Compose
+- **Database Migrations:** Flyway
+
+---
+
+## 🧪 Development Setup
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Java 21 LTS**: [Download JDK 21](https://www.oracle.com/java/technologies/downloads/)
+- **Node.js**: [Download Node.js](https://nodejs.org/)
+- **Docker & Docker Compose**: [Install Docker](https://www.docker.com/products/docker-desktop)
+
+### Backend Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/alabenkhlifa/opauto.git
+   cd opauto
